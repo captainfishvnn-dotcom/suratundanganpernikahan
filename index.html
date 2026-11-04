@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Undangan Pernikahan - Kousei & Kaori</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons (untuk ikon lokasi & tanggal) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- simplyCountdown Theme Default -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplycountdown.js@1.6.0/dist/simplyCountdown.theme.default.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HERO SECTION / COVER -->
+  <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+    <main>
+      <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
+      <h1 class="nama-mempelai">Kousei Arima & Kaori Miyazono</h1>
+      <p class="mb-4">Akan Melangsungkan Resepsi Pernikahan Dalam:</p>
+      
+      <!-- Container Countdown -->
+      <div class="simply-countdown"></div>
+
+      <!-- Tombol Scroll ke Undangan -->
+      <a href="#undangan" class="btn btn-lg btn-utama mt-4">Lihat Undangan</a>
+    </main>
+  </section>
+
+  <!-- SECTION ISI UNDANGAN -->
+  <section id="undangan" class="undangan py-5">
+    <div class="container">
+      
+      <!-- Judul Pembuka -->
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-md-8">
+          <h2 class="judul-section">Mempelai Pernikahan</h2>
+          <p class="lead text-secondary">Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri hari bahagia kami.</p>
+        </div>
+      </div>
+
+      <!-- Detail Mempelai -->
+      <div class="row text-center justify-content-center align-items-center mb-5">
+        <!-- Mempelai Pria -->
+        <div class="col-lg-5 mb-4">
+          <div class="card card-mempelai p-4 shadow">
+            <!-- Foto Kousei Bulat -->
+            <img src="images/Kousei Arima.jpg" alt="Kousei Arima" class="img-mempelai mb-3">
+            <h3 class="nama-profil">Kousei Arima</h3>
+            <p class="text-muted mb-2">Putra dari:</p>
+            <p class="mb-0"><strong>Bapak Takahiko Arima</strong><br>dan<br><strong>Ibu Saki Arima</strong></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 mb-4">
+          <h1 class="simbol-dan">&</h1>
+        </div>
+
+        <!-- Mempelai Wanita -->
+        <div class="col-lg-5 mb-4">
+          <div class="card card-mempelai p-4 shadow">
+            <!-- Foto Kaori Bulat -->
+            <img src="images/kaori Miyazono.jpg" alt="Kaori Miyazono" class="img-mempelai mb-3">
+            <h3 class="nama-profil">Kaori Miyazono</h3>
+            <p class="text-muted mb-2">Putri dari:</p>
+            <p class="mb-0"><strong>Bapak Yoshiyuki Miyazono</strong><br>dan<br><strong>Ibu Ryouko Miyazono</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-5 opacity-25">
+
+      <!-- Detail Lokasi & Waktu -->
+      <div class="row text-center justify-content-center">
+        <div class="col-md-8">
+          <h2 class="judul-section mb-4">Waktu & Tempat Acara</h2>
+          
+          <div class="card card-lokasi p-4 shadow">
+            <h5><i class="bi bi-calendar-event text-danger"></i> Tanggal</h5>
+            <p class="mb-4">Kamis, 18 Februari 2027<br>Pukul 19.30 JST / Selesai</p>
+
+            <h5><i class="bi bi-geo-alt-fill text-danger"></i> Lokasi Gedung</h5>
+            <p class="mb-4">Musashino, Tokyo, Jepang</p>
+
+            <!-- Tombol Buka Maps Otomatis -->
+            <div>
+              <a href="https://www.google.com/maps/search/?api=1&query=Musashino,+Tokyo,+Japan" target="_blank" rel="noopener noreferrer" class="btn btn-utama">
+                <i class="bi bi-map"></i> Buka Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 text-white bg-dark">
+    <small>&copy; 2027 Kousei & Kaori Wedding. All Rights Reserved.</small>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- simplyCountdown Library CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/simplycountdown.js@1.6.0/dist/simplyCountdown.min.js"></script>
+
+  <!-- Inisialisasi Countdown -->
+  <script>
+    simplyCountdown('.simply-countdown', {
+      year: 2027,
+      month: 2,
+      day: 18,
+      hours: 19,
+      minutes: 30,
+      seconds: 0,
+      words: {
+        days: { singular: 'Hari', plural: 'Hari' },
+        hours: { singular: 'Jam', plural: 'Jam' },
+        minutes: { singular: 'Menit', plural: 'Menit' },
+        seconds: { singular: 'Detik', plural: 'Detik' }
+      },
+      plural: false,
+      inline: false,
+      enableUtc: false
+    });
+  </script>
+
+</body>
+
+</html>
